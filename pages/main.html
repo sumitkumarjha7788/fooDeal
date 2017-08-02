@@ -3,6 +3,7 @@
     <nav class="navbar navbar-default navbar-fixed">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- navbaris  set and icons are placed and given the settings to the buttons placed on the navbar   -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -12,7 +13,8 @@
                 </button>
                 <a class="navbar-brand" href="#">Foodie</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Collect the nav links, forms, and other content for toggling
+          links are linked and added controls-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#!/home">Home</a></li>
@@ -27,7 +29,7 @@
     </nav>
     <div class="ui container">
         <div class="hero">
-            <p>Find the best restaurants in town</p>
+            <p style="background-color:rgba(0,0,0,0.6)" >Find the best place to EAT and DRINK antwhere you go.</p>
         </div>
         <!-- <div>sdfsd</div>
         <div>sdsa</div>
@@ -41,6 +43,7 @@
             </form>
           </div>
           <!-- tell them about orderBy: 'cost' and multiple filters -->
+          <!--  details setting with display of the specific info at specific place is done and filters are used to automate(like cost searching ,cost for the two ,etc.)   -->
           <div ng-repeat="restaurant in restaurants | filter:query" class="restaurant">
             <div class="rest-wrapper">
                  <div class="image">
@@ -69,11 +72,12 @@
              </div>
              <div class="value">
                  <div>{{restaurant.cuisines}}</div>
-                 <!-- //do something here to change the cost -->
+                 <!-- //do something here to change the cost auto add the , and $ -->
                  <div>₹{{restaurant.cost | number}}</div>
                  <div>{{restaurant.hours}}</div>
              </div>
          </div>
+         <!-- rating of restaurant specified  -->
          <div class="rating">
              <strong>{{restaurant.vote}}</strong>
          </div>

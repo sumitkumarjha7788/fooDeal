@@ -11,6 +11,7 @@
     <script src="js/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
     <style>
+    /*<!-- if the login form has something invalid and unfilled then the box will change the color attracting theeyes of the user --> */
     input.ng-invalid.ng-dirty {
         border: 1px solid red;
     }
@@ -20,6 +21,7 @@
 <body id="app">
 
     <!-- Everything inside a specific page will come inside this view -->
+    <!--ng-view decides what to show when and what not to show during the specific-->
     <div ng-view></div>
 
     <script src="js/jquery.js"></script>

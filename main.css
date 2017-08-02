@@ -5,13 +5,14 @@
 }
 
 body {
-    background-color: #F3F3E8;
+    background-image:url(http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/top10/top10-restaurants-siam/pagePropertiesImage/best-restaurants-siam.jpg);
     font-family: Helvetica, Arial, sans-serif;
+    background-size: cover;
 }
 
 .hero {
-    background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
-    background-size: cover;
+    background-image: url('http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/top10/top10-restaurants-sukhumvit/pagePropertiesImage/best-restaurants-sukhumvit.jpg');
+    background-size: contain;
     min-height: 300px;
     border-radius: 4px;
     color: white;
@@ -148,6 +149,7 @@ body {
     background-color:#cb202d;
     color: white;
     padding: 0.4rem 1rem;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    margin: auto;
 }

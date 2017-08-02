@@ -1,4 +1,4 @@
-<div class="restaurant" ng-if="restaurant.name">
+<div class="restaurant" ng-if="restaurant.name"><!-- if the restaurantis present only then will appear at the screen (ng-if statement)-->
     <div class="rest-wrapper">
         <div class="image">
             <img src="{{restaurant.image}}" height="100" width="100">
@@ -46,6 +46,7 @@
     </ol>
 </div>
   </div>
+  <!-- if restaurantis not present then hide the error message and show the empty page-->
     <h1 ng-hide="restaurant.name"> ERROR 404:RESTAURANT NOT FOUND</h1>
 
 </div>
